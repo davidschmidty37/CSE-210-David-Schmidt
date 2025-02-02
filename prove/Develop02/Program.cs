@@ -19,10 +19,12 @@ class Program
         if (choice == 1)
         {
             journal.AddEntry();
+            Console.WriteLine("Goodjob on submitting an entry! Keep up the good habits.");
     
         }
         if (choice == 2)
         {
+            Console.WriteLine("Here are your journal entries:");
             journal.DisplayEntries();
         }
         if (choice == 3)
