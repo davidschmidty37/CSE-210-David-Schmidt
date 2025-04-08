@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-// Base class for all game objects
 abstract class GameObject
 {
     public string Name { get; protected set; }

@@ -2,7 +2,7 @@ abstract class Character : GameObject
 {
     public int Health { get; protected set; }
     public int AttackPower { get; protected set; }
-    public int Defense { get; protected set; }
+    public int Defense { get; set; }
     public int Level { get; protected set; } = 1;
     public int Experience { get; protected set; } = 0;
     
@@ -34,9 +34,10 @@ abstract class Character : GameObject
     public virtual void LevelUp()
     {
         Level++;
-        Health += 10;
-        AttackPower += 2;
-        Defense += 1;
+        Health += 20; 
+        AttackPower += 5;
+        Defense += 2; 
         Console.WriteLine($"{Name} leveled up to Level {Level}!");
+        Console.WriteLine($"{Name}'s stats have improved: Health={Health}, AttackPower={AttackPower}, Defense={Defense}");
     }
 }
